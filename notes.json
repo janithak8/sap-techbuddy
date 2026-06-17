@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "001",
+    "category": "WM",
+    "keywords": [
+      "inconsistency",
+      "classification",
+      "bmcc",
+      "classification data",
+      "error"
+    ],
+    "title": "Inconsistency in Classification Data Error",
+    "content": "Run TCode BMCC to resolve inconsistency in classification data error. Transaction: BMCC."
+  },
+  {
+    "id": "002",
+    "category": "WM",
+    "keywords": [
+      "auto ibd",
+      "ibd not creating",
+      "inbound delivery",
+      "purchase order",
+      "missing parameter"
+    ],
+    "title": "Auto IBD Not Creating",
+    "content": "Cause: Missing parameter in purchase order. Check the PO for missing mandatory parameters and complete them. Then retry the IBD creation. Transaction: ME22N, ME23N."
+  },
+  {
+    "id": "003",
+    "category": "WM",
+    "keywords": [
+      "rf queue",
+      "add user",
+      "lrfmd",
+      "lpk1",
+      "lpk2",
+      "lpk3",
+      "control cycle",
+      "rf user"
+    ],
+    "title": "Add Users to RF Queue",
+    "content": "Use LRFMD to add users to RF Queue: 1) Click on Change. 2) Select the User ID to change or click New Entries to add new users. 3) Tick status as Active. 4) Save. Use LPK1 / LPK2 / LPK3 to create, change, and display control cycles. Transaction: LRFMD, LPK1, LPK2, LPK3."
+  },
+  {
+    "id": "004",
+    "category": "WM SD",
+    "keywords": [
+      "shipment error",
+      "account determination",
+      "vf02",
+      "acctassmtgrpmat",
+      "invoice error"
+    ],
+    "title": "Shipment Error - Account Determination",
+    "content": "To correct invoice error in shipment: Go to VF02 and update the AcctAssmtGrpMat field. This resolves account determination errors on shipment invoices. Transaction: VF02."
+  },
+  {
+    "id": "005",
+    "category": "WM SD",
+    "keywords": [
+      "shipment error",
+      "transat",
+      "hs code",
+      "origin country",
+      "transit"
+    ],
+    "title": "Shipment Error - Transat / HS Code",
+    "content": "Update HS code and origin country at master data level to resolve Transit/Transat shipment errors. Refer to attached invoicing error PDF for country of origin field locations. Transaction: MM02."
+  },
+  {
+    "id": "006",
+    "category": "WM",
+    "keywords": [
+      "vl10d",
+      "variant",
+      "90 days",
+      "sto",
+      "obd",
+      "outbound delivery",
+      "pick orders"
+    ],
+    "title": "New Variant Creation for VL10D - Orders Over 90 Days",
+    "content": "Create a new variant in VL10D to pick orders over 90 days for STO OBD creation. Configure variant selection criteria to include delivery dates beyond 90 days. Transaction: VL10D."
+  },
+  {
+    "id": "007",
+    "category": "WM",
+    "keywords": [
+      "scrap",
+      "humo",
+      "hu",
+      "handling unit",
+      "reason code",
+      "cost center",
+      "scrapping"
+    ],
+    "title": "Scrap Materials Using HUMO",
+    "content": "Steps to scrap materials using HUMO: 1) Enter the list of HUs and execute. 2) Select pick for scrapping. 3) Check the reason code and the cost center before confirming. Transaction: HUMO."
+  },
+  {
+    "id": "008",
+    "category": "WM",
+    "keywords": [
+      "invoice",
+      "obd",
+      "vf01",
+      "delivery number",
+      "invoice not creating"
+    ],
+    "title": "Invoice Not Getting Created in OBD",
+    "content": "To resolve invoice not creating in OBD: 1) Go to VF01. 2) Enter delivery number in the document column. 3) Click Save. The invoice (Tenn. invoice) will be generated. Transaction: VF01."
+  },
+  {
+    "id": "009",
+    "category": "WM",
+    "keywords": [
+      "pgi",
+      "inspection lot",
+      "goods issue",
+      "obd",
+      "quality",
+      "cannot pgi"
+    ],
+    "title": "Cannot PGI OBD Due to Inspection Lot Open",
+    "content": "PGI is blocked because there is an open inspection lot. Close or complete the quality inspection lot (usage decision) before attempting PGI. Check inspection lot status in QA32. Transaction: QA32, VL02N."
+  },
+  {
+    "id": "010",
+    "category": "WM",
+    "keywords": [
+      "qrfc",
+      "queue monitor",
+      "blocked to",
+      "smq2",
+      "transfer order",
+      "stuck",
+      "activate queue"
+    ],
+    "title": "qRFC Queue Monitor - Clear Blocked Transfer Orders",
+    "content": "Use SMQ2 to view the inbound queue of qRFC: 1) Select the TO number which is blocked or not cleared correctly. 2) Click on Display Selection. 3) Click on Activate Queue to release the blocked TO. Transaction: SMQ2."
+  },
+  {
+    "id": "011",
+    "category": "WM",
+    "keywords": [
+      "minus figures",
+      "pack.bin",
+      "negative stock",
+      "lt01",
+      "storage bin",
+      "manual to"
+    ],
+    "title": "Remove Minus Figures from PACK.BIN Storage Bin",
+    "content": "Steps to fix minus stock in PACK.BIN: 1) Identify stock in PACK.BIN and the corresponding storage type where positive line exists. 2) Go to LT01 to manually create a Transfer Order. 3) In FROM section: enter Storage Type + Section + Bin (Positive side). 4) In TO section: enter Storage Type + Section + Bin (minus side). 5) Press Enter to validate — system auto-fills fields. 6) Press Enter again to post TO. 7) Refresh LS24 to confirm +/- figures are set off. Transaction: LT01, LS24."
+  },
+  {
+    "id": "012",
+    "category": "WM",
+    "keywords": [
+      "idoc",
+      "rfc",
+      "we02",
+      "we09",
+      "smq1",
+      "smq2",
+      "sm58",
+      "monitoring",
+      "edidd",
+      "edids"
+    ],
+    "title": "IDOC and RFC Monitoring",
+    "content": "Key transactions for IDOC and RFC monitoring: WE02 - Standard IDOC display. WE09 - IDOC monitor with filters and details. EDIDD - IDOC Data Record Table. EDID4 - IDOC Data Table (alternate). EDIDS - IDOC Status Record Table. SMQ1 - RFC Monitoring (outbound). SMQ2 - RFC Monitoring (inbound). SM58 - MII RFC connections and transactional RFC. Transaction: WE02, WE09, SMQ1, SMQ2, SM58."
+  },
+  {
+    "id": "013",
+    "category": "WM",
+    "keywords": [
+      "storage unit",
+      "handling unit",
+      "hu02",
+      "not a handling unit",
+      "hu error",
+      "packing material"
+    ],
+    "title": "Storage Unit Is Not a Handling Unit Error",
+    "content": "Resolution for 'Storage unit is not a handling unit' error: 1) Go to HU02 and enter the SU number with the problem, press Enter. 2) Select the HU line and empty the existing HU by clicking the empty button. 3) Create a new HU by entering a packing material (BOX_OMEGA or ROLL_OMEGA). 4) Select the new HU line from top and the quantity line from bottom and pack it. 5) Check 'Ttl content' to confirm packing status. 6) Press Save — system automatically creates and confirms a TO. 7) Print the new HU label and paste it over the old one. Transaction: HU02."
+  },
+  {
+    "id": "014",
+    "category": "MM",
+    "keywords": [
+      "country of origin",
+      "preferential",
+      "mm42",
+      "zsir_contr_cons",
+      "report"
+    ],
+    "title": "Update Preferential Country of Origin",
+    "content": "To update Preferential Country of Origin in report ZSIR_CONTR_CONS: Go to MM42 and update the relevant field. This will update the country of origin field in the report output. Transaction: MM42, ZSIR_CONTR_CONS."
+  },
+  {
+    "id": "015",
+    "category": "WM",
+    "keywords": [
+      "non-hu",
+      "hu stock",
+      "311",
+      "movement type",
+      "ibd",
+      "transfer",
+      "cmt"
+    ],
+    "title": "Transfer Incorrectly Assigned Non-HU Stock to HU Stock",
+    "content": "Use movement type 311 to transfer when non-HU managed stock is available for a HU managed material. This creates an IBD in the system. Using this IBD, pack the non-HU stock into HUs and GR the stock to the correct storage location. Transaction: MIGO (311), MB1B."
+  },
+  {
+    "id": "016",
+    "category": "WM",
+    "keywords": [
+      "hu fix",
+      "gr reversal",
+      "ls24",
+      "vekp",
+      "hu_lgort",
+      "stock visible",
+      "2122153"
+    ],
+    "title": "HU Fix - GR Reversal Stock Still Visible in LS24",
+    "content": "Issue: HU having a GR reversal document but stock still visible in LS24. Fix: Check and fix HU in VEKP table — HU_LGORT field should change from value A to X. Reference ticket: 2024-2122153. Transaction: SE16 (VEKP), HUMO."
+  },
+  {
+    "id": "017",
+    "category": "Configuration",
+    "keywords": [
+      "rf connection",
+      "zebra",
+      "pr1",
+      "xr2",
+      "barcode",
+      "rf device",
+      "auto login"
+    ],
+    "title": "Create RF Connection for Zebra Devices",
+    "content": "PR1 SAP connection: Hostname: 172.16.146.106 or pr1tns.calzedonia.com | User: lkusr | Password: lkusrlkusr. XR2 SAP connection: Server: pm3tns.calzedonia.com | User: xr2usr | Password: xr2usrxr2usr. Create the Auto Login profile in the Zebra device settings. Reference barcode setup profile for scanner configuration."
+  },
+  {
+    "id": "018",
+    "category": "WM SD",
+    "keywords": [
+      "delivery return",
+      "supplier return",
+      "sales organization",
+      "raw materials",
+      "distribution channel",
+      "extend customer"
+    ],
+    "title": "Delivery Creating Error While Returning to Supplier",
+    "content": "Extend the customer linked with the supplier code to the following: Sales Organization - Raw Materials, Distribution Channel - TR (Transfers), Division - 00. Then retry the return delivery creation. Transaction: VD01/XD01."
+  },
+  {
+    "id": "019",
+    "category": "WM SD",
+    "keywords": [
+      "vt70",
+      "zb18",
+      "zb01",
+      "obd",
+      "shipment",
+      "message type"
+    ],
+    "title": "VT70 ZB18 Error",
+    "content": "Check whether any OBD attached to shipments does not have a ZB01 message type processed. If not, add ZB01 and create the IBDs. Verify in the output control for the delivery. Transaction: VT70, VL02N (output control)."
+  },
+  {
+    "id": "020",
+    "category": "MM",
+    "keywords": [
+      "lx02",
+      "md04",
+      "qty difference",
+      "mrp area",
+      "zfpp_vendor_mrpa",
+      "stock quantity"
+    ],
+    "title": "QTY Difference Between LX02 and MD04",
+    "content": "When stock in MMBE is assigned to a supplier but MRP areas are not created, quantities appear inconsistent between LX02 and MD04. Resolution: Create relevant MRP areas using transaction ZFPP_VENDOR_MRPA, then click Back and Save, then Generate. Reference ticket: 2025-2016358. Transaction: MMBE, LX02, MD04, ZFPP_VENDOR_MRPA."
+  },
+  {
+    "id": "021",
+    "category": "WM",
+    "keywords": [
+      "z transactions",
+      "custom tcode",
+      "zfpp",
+      "zisr",
+      "zlm",
+      "zwm",
+      "zmm"
+    ],
+    "title": "Z Custom Transactions Reference List",
+    "content": "Key custom Z transactions: ZFPP_WM_COWBHUWE, ZISR_ARTICOLI_ACQUIS, ZISR_CHG_DATE_INBD, ZISR_CONTR_CONS, ZISR_DATA_LOG_FI, ZISR_DATIBA_WM, ZISR_GET_IB_SHIPMENT, ZISR_HU_WEIGHT_LIST, ZISR_INFOREC_LIST, ZISR_INV_WM, ZISR_LX02_USER, ZISR_OUTPUT_CTRL, ZISR_PLANT_PACK_LIST, ZISR_PLANT_SHIP_ADV, ZISR_PO_SCHEDULE, ZISR_SKU_SHIPMDETAIL, ZISR_SPLIT_HU, ZISR_UPDATE_WM, ZISR_UPDATEWEIGHT_HU, ZISR_WM_RSTR, ZLM01, ZLM02, ZLM06, ZZ_SESSION_MANAGER, ZWM_SKU_WH, ZFMM_ART_DATA, ZMM46, ZISR_PLANT_SH_DETAIL, ZISR_PSA_LAYOUT, ZISR_ARTICOLI_DATIBA, ZISR_MIGO_MASS, ZISR_MIGO_ODA, ZMM_MIGO_MASS."
+  },
+  {
+    "id": "022",
+    "category": "PP",
+    "keywords": [
+      "migo",
+      "subcontracting",
+      "service receipt",
+      "inbound error",
+      "me22n",
+      "conf control"
+    ],
+    "title": "MIGO Subcontracting - Service Receipt Error",
+    "content": "If there is an inbound error in subcontracting MIGO: Go to ME22N and ensure the Conf.Control field is Empty (blank). Then retry the MIGO service receipt posting. Transaction: MIGO, ME22N."
+  },
+  {
+    "id": "023",
+    "category": "WM",
+    "keywords": [
+      "unpack pallet",
+      "lm22",
+      "hu",
+      "nested hu",
+      "pack.bin",
+      "pallet"
+    ],
+    "title": "Unpack Pallet HU",
+    "content": "Move the nested HU to pack.bin first, then use LM22 transaction to unpack the Pallet HU. Alternatively, empty the pallet HU and remove it. Transaction: LM22, HUMO."
+  },
+  {
+    "id": "024",
+    "category": "WM",
+    "keywords": [
+      "hu sticker",
+      "sticker color",
+      "brand",
+      "calzedonia",
+      "intimissimi",
+      "tezenis",
+      "falconeri",
+      "rf scanner"
+    ],
+    "title": "HU Sticker Color per Brand",
+    "content": "Approved HU sticker color mapping per brand: 1) Calzedonia - Pink. 2) Intimissimi - Light Blue. 3) IUMAN - Orange. 4) Tezenis - Red. 5) Falconeri - Yellow. 6) Atelier Eme / Antonio Marras / Golden Lady - Green. 7) Intimo3 (outlet + 2nd quality) - Dark Pink. All colors confirmed scannable via RF scanners and tablets. All other order info (FLASH, BRAZIL, EVENTS) must use a separate small additional sticker."
+  },
+  {
+    "id": "025",
+    "category": "WM",
+    "keywords": [
+      "copawa",
+      "zap_update_vpobj",
+      "vpobj",
+      "hu assignment",
+      "delete assignment",
+      "hu storage location"
+    ],
+    "title": "Delete Current Assignment of HU When COPAWA Doesn't Work",
+    "content": "Use transaction ZAP_UPDATE_VPOBJ. The HU must be in X (HU managed storage location) before executing. Enter the HU number, remove the Test tick, and execute. The current assignment will be deleted once you execute the VPOBJ transaction. Transaction: ZAP_UPDATE_VPOBJ, COPAWA."
+  },
+  {
+    "id": "026",
+    "category": "PP SD",
+    "keywords": [
+      "sales order",
+      "segmentation",
+      "obd",
+      "segment",
+      "not picked",
+      "materials not picked"
+    ],
+    "title": "Sales Order Segmentation Issue",
+    "content": "If materials are not picked into the OBD, the segment must be updated in the sales order. Go to VA02, find the sales order, and update the segment field. Without the correct segment, materials will not be included in the outbound delivery. Transaction: VA02."
+  },
+  {
+    "id": "027",
+    "category": "WM",
+    "keywords": [
+      "vlmove",
+      "location transfer",
+      "2 step",
+      "hu transfer",
+      "0012",
+      "post goods movement"
+    ],
+    "title": "VLMOVE - 2 Step Location Transfer",
+    "content": "Steps for 2-step location transfer in VLMOVE: 1) Go to VLMOVE. 2) Select 0012 from the Process dropdown and enter the HU. 3) Go to Material tab, enter material and plant. 4) Check batches in both batch columns. 5) Click Post Goods Movement. A material document is created and the HU shows in stock. Transaction: VLMOVE."
+  },
+  {
+    "id": "028",
+    "category": "WM PP",
+    "keywords": [
+      "good issue",
+      "cost center",
+      "humo",
+      "0013",
+      "other posting",
+      "gi cost center"
+    ],
+    "title": "Goods Issue to Cost Center",
+    "content": "Steps for GI to cost center using HUMO: 1) Go to HUMO, paste the HU/HUs and execute. 2) Select HU line, go to Edit > Change HU Posting > Other Posting. 3) In Process Dropdown, select 0013 - Use for cost center from Warehouse. 4) Enter the cost center. Key cost centers: 811C111 CUTTING, 811C122 SEWING FLOOR, 811C313 PRODUCTION PLANNING, 811C322 PURCHASING, 811C331 QUALITY RM, 811C342 TRAINING CENTRE, 811C622 SAMPLE ROOM, 811C299 SUBCONTRACTING MGMT. Transaction: HUMO."
+  },
+  {
+    "id": "029",
+    "category": "PP WM",
+    "keywords": [
+      "confirmation mismatch",
+      "idoc",
+      "bra cup",
+      "bd87",
+      "idoc reprocess",
+      "mii",
+      "interface"
+    ],
+    "title": "Confirmation Mismatch in Bra Cup Operation",
+    "content": "Error occurs due to unprocessed IDOCs between the active system and SAP. IDOC repository path: \\\\10.241.9.152\\SAP_Interface\\. Inbound IDOCs stored in 'tx' folder, outbound in 'rx' folder. Confirmed IDOCs moved to Archive folder. Resolution: Go to BD87, select the partner system, set Changed On date to match IDoc creation date. Execute and click Process to reprocess unprocessed IDOCs. Double-click 'Application document not posted' to see error details. Transaction: BD87, WE02."
+  },
+  {
+    "id": "030",
+    "category": "PP WM",
+    "keywords": [
+      "production order",
+      "gi reversal",
+      "lm01",
+      "zfpp_mb11",
+      "262",
+      "component reversal",
+      "co13"
+    ],
+    "title": "Production Order Issued Component Reversal",
+    "content": "Three options for GI reversal: 1) RFQ list - After GI run LM01, go to menu path 5,1,5, give the HU and reverse GI. 2) ZFPP_MB11 - Used by production team. Requires: Material code, Production order, Packaging material (e.g. Box_Sirio), returning supply area. 3) MIGO - Select Trans/Event A07 Goods Issue, Reference R10 Other, Movement type 262. Enter Material, Qty, Batch, and Production order in Account Assignment tab. This creates an inbound document; process PGR to GR the quantity. Production order confirmation reverse: Go to CO13, enter production order, select confirmation to reverse and save. Transaction: LM01, ZFPP_MB11, MIGO, CO13."
+  },
+  {
+    "id": "031",
+    "category": "PP",
+    "keywords": [
+      "md04",
+      "segmentation",
+      "remove segment",
+      "su01",
+      "two stock lines",
+      "bra cup"
+    ],
+    "title": "Remove Segmentation from MD04 (Two Stock Lines)",
+    "content": "Issue: Segment activated stock for customer plants of bra cups causes two stock lines in MD04. Resolution: Go to SU01, add the following parameter with value X (parameter name visible in SU01 Parameters tab). This removes the segmentation display. Transaction: SU01, MD04."
+  },
+  {
+    "id": "032",
+    "category": "WM PP",
+    "keywords": [
+      "to from tr",
+      "transfer order",
+      "bom",
+      "0 qty",
+      "zero quantity",
+      "2111859"
+    ],
+    "title": "Unable to Create TO from TR",
+    "content": "Cause: There is a 0 quantity line in the BOM from the related SKU. Resolution: 1) Find the BOM for the material. 2) Add a new line with the required quantity. 3) After updating BOM, create the TO again. Reference ticket: 2023-2111859. Transaction: CS02, LT0A."
+  },
+  {
+    "id": "033",
+    "category": "WM PP",
+    "keywords": [
+      "gi not posted",
+      "hu error",
+      "copawa",
+      "cowbhuwa",
+      "inspection plan",
+      "rel status",
+      "ud status"
+    ],
+    "title": "Resolve GI Not Posted for HU Error",
+    "content": "Identify exact error using COPAWA/COWBHUWA to assign and issue HU manually. Reason 01: Inspection plan assigned to HU is in REL status instead of UD. Reason 02: Production order component has a 0 quantity line attached to batch — two lines appear (one with qty/no batch, one with batch/no qty). Solution for Reason 02: Insert a new line in production order with the correct requirement quantity and delete the two incorrect lines. Then execute WM Material Staging. Also check HUs assigned to a production order using ZAP_UPDATE_VPOBJ (HU storage location must be X). Then GI the component via LM01 or COPAWA/COWBHUWA. Transaction: COPAWA, COWBHUWA, LM01, ZAP_UPDATE_VPOBJ, CO02."
+  },
+  {
+    "id": "034",
+    "category": "PP WM",
+    "keywords": [
+      "no open reservation",
+      "lpk1",
+      "control cycle",
+      "wm staging",
+      "co02",
+      "supply area"
+    ],
+    "title": "Resolving No Open Reservation Found Issue",
+    "content": "Resolution: 1) Check production order WM staging simulation in CO02. 2) Find the material with error and verify if control cycle columns are filled or blank. 3) If blank, create control cycle data using LPK1 - fill required fields and save. Identify the supply area from the WM Staging supply area column. 4) Run WM Staging and save. Transaction: CO02, LPK1."
+  },
+  {
+    "id": "035",
+    "category": "PP",
+    "keywords": [
+      "md04",
+      "stock splitting",
+      "bra cup",
+      "planning",
+      "zmd04hanaoff",
+      "su01 parameter"
+    ],
+    "title": "Correct MD04 Stock Splitting for Bra Cup Planning Team",
+    "content": "Go to SU01, enter User ID and go to Change mode. Then go to Parameters tab and add ZMD04HANAOFF parameter with value X. Save. This corrects the stock splitting display in MD04 for bra cup planning. Transaction: SU01."
+  },
+  {
+    "id": "036",
+    "category": "PP",
+    "keywords": [
+      "cmt",
+      "sales order",
+      "purchase order",
+      "production order",
+      "update fields",
+      "cmt order"
+    ],
+    "title": "Correct Way to Update CMT Sales Order with Production Order and Purchase Order",
+    "content": "Update the correct fields in the CMT sales order to link the purchase order and production order. If not updated correctly, the system will give an error. Verify the specific field mapping from the CMT order screen — update both PO and PRO references in the designated fields. Transaction: VA02."
+  },
+  {
+    "id": "037",
+    "category": "Configuration",
+    "keywords": [
+      "job order printer",
+      "su01",
+      "default printer",
+      "printer setup",
+      "2120029"
+    ],
+    "title": "Job Order Printer Setup (SU01)",
+    "content": "Go to SU01 with the User ID. Go to the Defaults tab and set the default printer in the Output Device field. This configures which printer the user's job orders will print to. Reference ticket: 2023-2120029. Transaction: SU01."
+  },
+  {
+    "id": "038",
+    "category": "PP",
+    "keywords": [
+      "production order",
+      "gr qty",
+      "header correction",
+      "zpcon_076f",
+      "spool",
+      "quantity mismatch"
+    ],
+    "title": "Production Order Header GR Quantity Correction",
+    "content": "Transaction ZPCON_076F runs automatically daily to check GR quantity discrepancies. Setup input: run daily. The transaction checks every order and generates a spool only for orders with different quantities. To review: Open spool in Excel, filter including 'order' to get the list of orders with problems. The last line of the spool shows the count of orders in error. Run again in update mode with the list of orders. Run in background. Note: Orders created in August are migration issues — do not report. Orders created after August should be raised to SAP support with linked tickets. Transaction: ZPCON_076F, SP01."
+  },
+  {
+    "id": "039",
+    "category": "MM",
+    "keywords": [
+      "batch class",
+      "classification",
+      "bmbc",
+      "cl20n",
+      "change batch class",
+      "rm_batch"
+    ],
+    "title": "Change the Class of Batch",
+    "content": "Steps to change batch classification: 1) Check in BMBC if batches exist — if yes, go to Classification tab for each batch and delete it. 2) Go to CL20N and delete the existing wrong classification. 3) Add new row with correct batch classification (e.g. RM_BATCH). 4) Go to BMBC and for every batch create the new batch classification using the paper button. Transaction: BMBC, CL20N."
+  },
+  {
+    "id": "040",
+    "category": "PP MM",
+    "keywords": [
+      "mrp area",
+      "material",
+      "zfpp_mm_mrparea",
+      "assign mrp",
+      "integration"
+    ],
+    "title": "MRP Area Assign for Material",
+    "content": "Use transaction ZFPP_MM_MRPAREA to assign MRP areas to materials. This is the custom transaction for SAP integration requirements. Transaction: ZFPP_MM_MRPAREA."
+  },
+  {
+    "id": "041",
+    "category": "PP WM",
+    "keywords": [
+      "zfpp_mb11",
+      "reversal",
+      "new line",
+      "balance quantity",
+      "open quantity",
+      "add line"
+    ],
+    "title": "After Issued Quantity Reversal Using ZFPP_MB11 - How to Add New Line",
+    "content": "After reversing issued quantity in ZFPP_MB11, there may be no open quantity line for remaining stock. Steps: 1) Identify the unbalanced line (e.g. line 0010). 2) Add a new line item (e.g. line number 0001) for the balance quantity. 3) Close the unbalanced line with the same quantity to zero it out. Example: Requirement 48.070, reversed 22 MTR — add new line for balance 22 MTR and close the unbalanced line. Transaction: ZFPP_MB11, CO02."
+  },
+  {
+    "id": "042",
+    "category": "MM",
+    "keywords": [
+      "batch management",
+      "enable batch",
+      "stock exists",
+      "reservation",
+      "final issue",
+      "batch activate"
+    ],
+    "title": "Batch Management Enable for Material",
+    "content": "If enabling batch management gives 'stock exists' error even with no stock: Check whether there are any open reservations or open production order lines. Close them by adding the Final Issue tick to each open line. Then retry enabling batch management. Transaction: MM02, MMAM, CO02."
+  },
+  {
+    "id": "043",
+    "category": "MM PP",
+    "keywords": [
+      "mrp area",
+      "vendor",
+      "supplier",
+      "zfpp_vendor_mrpa",
+      "map supplier"
+    ],
+    "title": "MRP Area Map for Suppliers",
+    "content": "Use transaction ZFPP_VENDOR_MRPA to map MRP areas for suppliers: 1) Open a new entry. 2) MRP Area - enter the plant and vendor code and vendor name. 3) Double-click the item to complete details. Transaction: ZFPP_VENDOR_MRPA."
+  },
+  {
+    "id": "044",
+    "category": "PP",
+    "keywords": [
+      "cobj",
+      "plo",
+      "unnecessary plo",
+      "mrp area",
+      "ppc1-lo",
+      "pd",
+      "stock segment",
+      "2014970"
+    ],
+    "title": "Unnecessary PLO Generation for COBJ Articles",
+    "content": "Steps to investigate unnecessary PLO: 1) Check material is properly extended for relevant MRP area (e.g. PPC1-LO). 2) Check MRP type — it should be PD. 3) Check stock requirement with MD04 to understand actual status. Common root cause: required article has stock segment BJ but available stock has no stock segment — mismatch causes PLO. Reference ticket: 2025-2014970. Transaction: MD04, MM03."
+  },
+  {
+    "id": "045",
+    "category": "MM WM",
+    "keywords": [
+      "mb51",
+      "material movements",
+      "view movements",
+      "mb52",
+      "mmbe",
+      "coois",
+      "movement type"
+    ],
+    "title": "View Movements for a Single Material",
+    "content": "MB51 - Best report to see all material movements for one material. How to use: Enter Material number, Plant, Date range, Execute. Shows: GR (101), Quality inspection stock (103/105), Scrap (551), Consumption (261, 201), Transfer postings (311), Movement type, User who posted, Document number. MB52 - Current stock only (Unrestricted, Quality, Blocked, Special stock). MMBE - Stock type and storage location level check. COOIS - For production consumption (261 movement) — shows which production order consumed material. Common movement types: 101 GR, 103 GR to Quality, 105 Release from Quality, 261 Production consumption, 551 Scrap, 201 Cost center consumption. Transaction: MB51, MB52, MMBE, COOIS."
+  },
+  {
+    "id": "046",
+    "category": "MM",
+    "keywords": [
+      "wsm3",
+      "rules",
+      "listing",
+      "wsoa2",
+      "material group",
+      "listing rules"
+    ],
+    "title": "Resolve Rules Doesn't Allow Listing Through WSM3",
+    "content": "Steps: 1) Go to WSOA2. 2) Enter plant code. 3) Go to Material Group tab and enter the material group of the material that doesn't allow listing. 4) Save. Then go to WSM3 and list the material successfully. Transaction: WSOA2, WSM3."
+  },
+  {
+    "id": "047",
+    "category": "MM",
+    "keywords": [
+      "material group",
+      "language",
+      "wg22",
+      "additional language",
+      "description"
+    ],
+    "title": "Add Additional Language for Material Group",
+    "content": "Information only — do not update in PRD system. Steps: 1) Go to WG22 and enter the material group to update. 2) Go to Goto Tab > Additional Languages. 3) Insert new row, add required material group language and description. 4) Save. Transaction: WG22."
+  },
+  {
+    "id": "048",
+    "category": "MM",
+    "keywords": [
+      "create pr",
+      "purchase requisition",
+      "za4a",
+      "mb51n",
+      "me5a",
+      "cost center",
+      "purchasing group"
+    ],
+    "title": "Create PR - New Flow",
+    "content": "ZA4A PR type requires no approval. Steps: 1) Go to MB51N and select document type. Fill: PR Type - ZA4A, Acct Assignment Category - K (Cost center), Material number, Quantity, Purchasing group - 135 (Omega-IT), Cost center (get from Finance). 2) Go to ME5A, enter fields, and view the report. 3) Double-click on the line to go to the PR. Transaction: MB51N, ME5A."
+  },
+  {
+    "id": "049",
+    "category": "MM",
+    "keywords": [
+      "change material type",
+      "mmam",
+      "no stock",
+      "open po",
+      "material type change"
+    ],
+    "title": "Change Material Type with MMAM",
+    "content": "Before proceeding with MMAM to change material type: Ensure there are no stocks, no open purchase orders, and no open documents for the material. All must be cleared before the material type change can proceed. Transaction: MMAM, MM03."
+  },
+  {
+    "id": "050",
+    "category": "MM",
+    "keywords": [
+      "to creation fail",
+      "ibd",
+      "pettaway",
+      "delivery address",
+      "po line",
+      "we19",
+      "aif",
+      "idoc reprocess"
+    ],
+    "title": "TO Creation Fail for IBD / Pettaway Fail",
+    "content": "Root cause: Wrong Delivery Address inside the PO line item. Steps: 1) Correct Delivery Address inside PO line item. 2) Extract supplier invoice number from IBD. 3) Delete relevant IBD. 4) Identify IDoc from /n/aif/err. 5) Go to WE19 and reprocess the IDoc to create a new IBD. Transaction: ME22N, /n/aif/err, WE19."
+  },
+  {
+    "id": "051",
+    "category": "Configuration",
+    "keywords": [
+      "xr2",
+      "configuration",
+      "service file",
+      "message server",
+      "system id",
+      "sapmsxr2"
+    ],
+    "title": "XR2 System Configuration",
+    "content": "Enter Service file record: sapmsXR2 3601/TCP. Description: SAP S/4HANA ERP (XR2). Message Server: sapXR2.calzedonia.com. System ID: XR2. Configure SAP GUI with these connection parameters for XR2 system access."
+  },
+  {
+    "id": "052",
+    "category": "Configuration",
+    "keywords": [
+      "printer configuration",
+      "nace",
+      "handling unit",
+      "zz02",
+      "zph1",
+      "zbfg",
+      "raw materials",
+      "output type"
+    ],
+    "title": "Printer Configuration for HU Labels",
+    "content": "Steps: 1) Go to NACE transaction, select V6 - Handling Units, click Condition Records. 2) Double-click and select output type ZZ02 - HU LK Finished Goods. Select ZPH1 for Raw Materials. 3) Select PkgMtlType/User combination. 4) Provide packaging material type ZBFG and User ID, execute. 5) Go to Output Condition and select Create. 6) Fill fields, click Communication button. 7) Provide Output Device, mark Print Immediately checkbox, Save. Use SPAD to view and manage printer spools and settings. Transaction: NACE, SPAD."
+  },
+  {
+    "id": "053",
+    "category": "Configuration",
+    "keywords": [
+      "suim",
+      "user data",
+      "extract user",
+      "user report",
+      "user list"
+    ],
+    "title": "Get User Data from SAP",
+    "content": "Use SUIM transaction to extract all user data from SAP. SUIM provides comprehensive user information including roles, authorizations, and logon data. Transaction: SUIM."
+  },
+  {
+    "id": "054",
+    "category": "Configuration",
+    "keywords": [
+      "check printer",
+      "spad",
+      "printer test",
+      "printer status"
+    ],
+    "title": "Check SAP Printer",
+    "content": "Use T-code SPAD to check and manage SAP printers. SPAD shows printer device settings, spool status, and output configuration. Transaction: SPAD."
+  },
+  {
+    "id": "055",
+    "category": "Configuration",
+    "keywords": [
+      "xml",
+      "confirmation",
+      "sto confirmation",
+      "pi",
+      "adapter engine",
+      "message monitor",
+      "payload"
+    ],
+    "title": "Extract Confirmation XML - STO Confirmation",
+    "content": "URL: http://sde-spo1j01.csg1.sys.calzedonia.com:52200/dir/start/index.jsp. Steps: 1) Go to Configuration and Monitoring. 2) Click Adapter Engine. 3) Click Message Monitor. 4) Select the date and press filter. 5) Select correct flow from the list and press 3. 6) Select message — open or export. 7) Open message and select Payload — better to Download as XML file. To find the IDoc: Copy the Message ID from message details, go to TCode ZISR_ECOMMERCE_ORD, paste Message ID in EDI Archive Key field. Transaction: ZISR_ECOMMERCE_ORD."
+  },
+  {
+    "id": "056",
+    "category": "Configuration",
+    "keywords": [
+      "printer output control",
+      "nace",
+      "printer assign",
+      "user printer",
+      "output control"
+    ],
+    "title": "Printer Output Control",
+    "content": "To assign printer type for a user: Go to NACE, select the application, and go to Condition Record. View and change printer assignment for user by selecting the PkgMtlType/User combination and updating the output device. Transaction: NACE."
+  },
+  {
+    "id": "057",
+    "category": "Configuration",
+    "keywords": [
+      "zebra",
+      "zq521",
+      "zpl",
+      "configuration",
+      "device languages",
+      "barcode printer"
+    ],
+    "title": "ZEBRA ZQ521 ZPL Configuration",
+    "content": "ZPL configuration commands for ZEBRA ZQ521 printer: ! U1 setvar \"device.languages\" \"zpl\" | ! U1 setvar \"device.pnp_option\" \"zpl\" | ! U1 do \"device.reset\" \"\". Send these commands to the printer to set ZPL as the device language."
+  },
+  {
+    "id": "058",
+    "category": "FM",
+    "keywords": [
+      "gl account",
+      "block posting",
+      "fs00",
+      "finance",
+      "account block",
+      "2114384"
+    ],
+    "title": "GL Account Block for Posting",
+    "content": "To fix GL account block for posting: Go to FS00, find the GL account, and untick the posting block indicator. Important: Take confirmation from Finance team before proceeding with this change. Reference ticket: 2023-2114384. Transaction: FS00."
+  },
+  {
+    "id": "059",
+    "category": "FM PP",
+    "keywords": [
+      "ck11n",
+      "costing",
+      "automatic cost estimate",
+      "raw material",
+      "source list",
+      "bom component"
+    ],
+    "title": "Component in CK11N Showing as Automatic Cost Estimate Instead of Raw Material",
+    "content": "When costing run for FG material shows component as 'Automatic Cost Estimate' instead of 'Raw Material', there are three main causes: 1) Material master data not maintained properly. 2) Source list not updated for material. 3) Material inserted as BOM component before master data update, causing a cost estimation to be created. Resolution: 1) Verify and correct material master data. 2) Maintain source list correctly. 3) Delete any existing cost estimates for the component using CK13N/CK74N. Transaction: CK11N, CK13N, MM02, CS02."
+  },
+  {
+    "id": "060",
+    "category": "FM SD",
+    "keywords": [
+      "invoice layout",
+      "country of origin",
+      "preferential",
+      "customer master",
+      "invoice not correct"
+    ],
+    "title": "Invoice Layout Error - Preferential Country of Origin / Commodity Code",
+    "content": "If an invoice is not creating the preferred layout, check whether the required field is updated in customer master data. The missing field in the customer master determines the invoice layout selection. Verify commodity code and preferential country of origin fields. Transaction: XD02/VD02."
+  },
+  {
+    "id": "061",
+    "category": "ASN",
+    "keywords": [
+      "asn",
+      "iungo",
+      "delivery address",
+      "xml",
+      "same storage location",
+      "packing list",
+      "vendor"
+    ],
+    "title": "ASN Document Not Submitting to IUNGO - Delivery Address Error",
+    "content": "Error: Vendor receives error saying delivery addresses are different. Cause: Vendor has included POs with different storage locations in the same XML document. Fix: XML document should only contain POs with the same destination storage location. Keep separate XML per storage location. Also check table ZISR_RHULIFNR for packing BOX and storage type indicator — if blank, it is a material master data issue. Verify both stock removal and stock placement fields are updated for the particular warehouse."
+  },
+  {
+    "id": "062",
+    "category": "ASN",
+    "keywords": [
+      "iungo",
+      "email",
+      "test",
+      "live",
+      "plant",
+      "omega line",
+      "alpha apparels",
+      "sirio",
+      "benji"
+    ],
+    "title": "Iungo Email Addresses - Test and Live",
+    "content": "Iungo TEST email addresses: PPA1/PPA2 Omega Line Ltd (OMEGALINENENEW) - omegaline@test.iungomail.com. PPB1 Alpha Apparels Ltd (ALPHAAPPARELSNEW) - alphaapparels@test.iungomail.com. PPD1 Sirio Ltd (SIRI0NEW) - sirio@test.iungomail.com. PPC1 Benji Ltd (BENJINEW) - benji@test.iungomail.com. Iungo LIVE email addresses: PPA1/PPA2 Omega Line Ltd - omegaline@iungomail.com. PPB1 Alpha Apparels - alphaapparels@iungomail.com. PPD1 Sirio - sirio@iungomail.com. PPC1 Benji - benji@iungomail.com."
+  },
+  {
+    "id": "063",
+    "category": "ASN",
+    "keywords": [
+      "iungo",
+      "test cycle",
+      "po",
+      "zpiu",
+      "me9f",
+      "packing list",
+      "xml format",
+      "utf-8"
+    ],
+    "title": "Iungo Test Cycle Process",
+    "content": "IDoc Message Type: ZPP_XIF_IUG_ASN_SAVE (Iungo to SAP). Steps: 1) Create a PO and add message type ZPIU, execute through ME9F. 2) Log into Iungo test: https://webapps.calzedonia.com:13443/iungo. 3) Verify PO is available in Iungo. Rules: Supplier submits 1 Packing List per Invoice, always 1-to-1 relation. XML encoding must be UTF-8-BOM. Email subject format: 'Packing List XXX of dd-mm-yyyy - Supplier Code'. File name format: PL_XXX_[Supplier Code].xml. Date format in XML: dd-mm-yyyy. Contact codes: Z2 Madawa - 9500004836, Z1 Madawa - 9500004837. Transaction: ME9F."
+  },
+  {
+    "id": "064",
+    "category": "ASN MM",
+    "keywords": [
+      "zisr_rhulifnr",
+      "maintain table",
+      "packing material",
+      "mm01",
+      "verp",
+      "vhar",
+      "packaging material type",
+      "sm30"
+    ],
+    "title": "Maintain Table ZISR_RHULIFNR",
+    "content": "Steps: 1) Create new packing material using MM01 with material type VERP. 2) Go to VHAR and create a packaging material type, or use SM30 to edit table V_TVTY. 3) Go to SM30 and update ZISR_RHULIFNR filling required data. Transaction: MM01, VHAR, SM30."
+  },
+  {
+    "id": "065",
+    "category": "EWM",
+    "keywords": [
+      "ewm t-codes",
+      "ewm transactions",
+      "scwm",
+      "standard transactions",
+      "reference"
+    ],
+    "title": "EWM Standard T-Codes Reference",
+    "content": "Master Data: /SCWM/MAT1 Maintain Product, /SCWM/LOC Maintain Storage Bins, /SCWM/LOCMON Bin Monitor, /SCWM/PKG Packaging Specs, /SCWM/TU Transport Unit, /SCWM/GRDEST GR Destination. Inbound: /SCWM/PRDI Inbound Delivery, /SCWM/GR Goods Receipt, /SCWM/GRPE GR by Exception, /SCWM/RFUI RF Menu. Outbound: /SCWM/PRDO Outbound Delivery, /SCWM/PICK Picking Monitor, /SCWM/POST Goods Issue, /SCWM/WAVE Create/Release Waves. Warehouse Tasks: /SCWM/TO_CONF Confirm WT, /SCWM/TO_MON WT Monitor, /SCWM/WO Warehouse Order. Physical Inventory: /SCWM/PI, /SCWM/PI_UI, /SCWM/COUNT. HU/Packing: /SCWM/HUMON HU Monitor, /SCWM/HUPAST Pack Station, /SCWM/ADHU Adjust HU. Monitoring: /SCWM/MON Main Monitor, /SCWM/QUEUES Queue Monitor, /SCWM/RSRC Resource Monitor. RF: /SCWM/RFUI RF Menu. Exception: /SCWM/EXCEPT Exception Codes, /SCWM/EXC_MON Exception Monitor."
+  },
+  {
+    "id": "066",
+    "category": "EWM",
+    "keywords": [
+      "physical inventory",
+      "ewm pi",
+      "inventory count",
+      "scwm/pi",
+      "zewm_lk_pi_report",
+      "zfewm_phy_inv_count",
+      "fiori"
+    ],
+    "title": "EWM Physical Inventory Process",
+    "content": "Standard PI transactions: /SCWM/PI, /SCWM/PI_UI, /SCWM/PI_PROCESS, /SCWM/COUNT. Our process transactions: /SCWM/PI_CREATE, /SCWM/PI_DOC_CREATE, Physical Inventory Fiori App, ZEWM_LK_PI_REPORT, ZFEWM_PHY_INV_COUNT, /SCWM/PI_PROCESS, /SCWM/DIFF_ANALYZER. Header data maintenance: ZFEWM_PHINV_HQ (HQ), ZFEWM_PHINV_IQ (IQ). Counted qty apps: ZFEWM_PHINV_Hq, ZFEWM_PHINV_Iq. Reference: UAT_EWM_22 Physical Inventory.xlsx."
+  },
+  {
+    "id": "067",
+    "category": "EWM",
+    "keywords": [
+      "hs code",
+      "obd",
+      "update",
+      "zisr_mpd_upd",
+      "duty code",
+      "erp delivery"
+    ],
+    "title": "HS Code Update for OBD Items",
+    "content": "Use transaction ZISR_MPD_UPD: In Selection Criteria tab: 1) Fill with ERP delivery number. 2) Enter the material code with missing HS code. 3) Remove Test checkbox. In Information to Update tab: Mark the Duty Code checkbox, fill the value to update, and execute. Transaction: ZISR_MPD_UPD."
+  },
+  {
+    "id": "068",
+    "category": "EWM",
+    "keywords": [
+      "ewm queue",
+      "smq2",
+      "warehouse request",
+      "zb18",
+      "distribution status",
+      "intercompany",
+      "queue error"
+    ],
+    "title": "EWM Queue Error: Warehouse Request for Delivery Exists",
+    "content": "Error: 'Warehouse request for SAP EWM delivery XXXXXXXX exists'. Cause: ZB18 output type resets distribution status of already-distributed inbound delivery. The delivery is automatically created when Shipper Plant posts GI and ZB01 is processed. ZB18 runs changes and resets distribution status, triggering re-distribution which causes the error. Solution: Go to SMQ2 and Delete the Queue. Note: There is a pending CR to fix this issue in XR2 that needs to be tested."
+  },
+  {
+    "id": "069",
+    "category": "EWM",
+    "keywords": [
+      "bin.rev.cnsmp",
+      "handling unit",
+      "reverse consumption",
+      "zmm_migo_mass",
+      "packing step",
+      "queue error"
+    ],
+    "title": "EWM Queue Error: Can Only Post to BIN.REV.CNSMP Using HU",
+    "content": "Error: 'You can only post to bin BIN.REV.CNSMP using a handling unit'. Cause: ZMM_MIGO_MASS generates an inbound delivery for reverse consumption, but the user missed the packing step before distribution. Process should be: change qty if needed > PACK > Distribute manually. When packing is skipped and delivery is distributed, system tries to post GR without HU. Solution: Go to /SCWM/PRDI and pack the stock in a HU, then execute the queue. Transaction: /SCWM/PRDI, SMQ2."
+  },
+  {
+    "id": "070",
+    "category": "EWM",
+    "keywords": [
+      "hu erp update",
+      "se38",
+      "zewm_hu_erp_update",
+      "gr without stock",
+      "handling unit posted",
+      "queue error"
+    ],
+    "title": "EWM Queue Error: Handling Unit Posted for GR Without Stock",
+    "content": "Error: 'There is already a Handling Unit # posted for GR without stock'. Solution: Run SE38 with program ZEWM_HU_ERP_UPDATE using the specified variant. Transaction: SE38 (ZEWM_HU_ERP_UPDATE)."
+  },
+  {
+    "id": "071",
+    "category": "EWM",
+    "keywords": [
+      "delivery not put away",
+      "smq2",
+      "smq3",
+      "note 3404401",
+      "wm status",
+      "golive",
+      "vl609"
+    ],
+    "title": "EWM Queue Error: Delivery Has Not Yet Been Put Away",
+    "content": "Error: 'Delivery has not yet been put away'. Cause: IBDs created before Go-Live have WM status retained. When distributed and GR posted, system tries to manage WM Status even though it should be EWM. Solution: Apply SAP Note 3404401 steps. The system generates a new queue for the same IBD with suffix DLV* — this new queue needs to be only Saved in SMQ3. Reference note: 3404401 - SMQ2 Error 'VL609 - Delivery has not yet been put away/picked'. Transaction: SMQ2, SMQ3."
+  },
+  {
+    "id": "072",
+    "category": "EWM MM",
+    "keywords": [
+      "volume",
+      "excess volume",
+      "mm02",
+      "sales general",
+      "plant data",
+      "q issues",
+      "volume tolerance"
+    ],
+    "title": "Q Issues - Volume and Excess Volume Tolerance Missing",
+    "content": "Cause: Volume and excess volume tolerance is missing under Sales General Plant Data tab in MM02. Resolution: Go to MM02, navigate to Sales General Plant Data tab, and fill in the volume and excess volume tolerance fields. Save. Transaction: MM02."
+  },
+  {
+    "id": "073",
+    "category": "WM",
+    "keywords": [
+      "hudiff",
+      "no posting",
+      "material items",
+      "not found",
+      "posting relevant"
+    ],
+    "title": "No Posting-Relevant Material Items Could Be Found",
+    "content": "Error: 'No posting-relevant material items could be found'. Resolution: Go to HUDIFF transaction to identify and resolve the discrepancy. Transaction: HUDIFF."
+  }
+]
